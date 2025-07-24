@@ -4,13 +4,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:gravity="center_horizontal">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenido, usuario"
-        android:textSize="20sp"
-        android:textStyle="bold"/>
+        android:text="Menú del Usuario"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnMisVehiculos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mis Vehículos" />
+
+    <Button
+        android:id="@+id/btnHistorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Historial de Servicios"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnSolicitarServicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Solicitar Servicio"
+        android:layout_marginTop="16dp" />
 </LinearLayout>

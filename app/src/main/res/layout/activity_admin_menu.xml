@@ -13,22 +13,26 @@
         android:text="Menú del Administrador"
         android:textStyle="bold"
         android:textSize="22sp"
-        android:layout_marginBottom="32dp"/>
+        android:layout_marginBottom="32dp" />
 
     <Button
+        android:id="@+id/btnCotizaciones"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Actualizar usuario"/>
+        android:text="Ver Cotizaciones" />
 
     <Button
+        android:id="@+id/btnTecnicos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ver cotizaciones"
-        android:layout_marginTop="16dp"/>
+        android:text="Ver Técnicos"
+        android:layout_marginTop="16dp" />
 
     <Button
+        android:id="@+id/btnUsuarios"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Asignar técnico"
-        android:layout_marginTop="16dp"/>
+        android:text="Actualizar Usuarios"
+        android:layout_marginTop="16dp" />
 </LinearLayout>
+
