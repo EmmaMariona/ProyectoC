@@ -8,7 +8,7 @@ import com.example.proyectoc.R;
 
 public class UsuarioActivity extends AppCompatActivity {
 
-    Button btnMisVehiculos, btnHistorial, btnSolicitarServicio;
+    Button btnMisVehiculos, btnHistorial, btnSolicitarServicio, btnCerrarSesion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,7 @@ public class UsuarioActivity extends AppCompatActivity {
         btnMisVehiculos = findViewById(R.id.btnMisVehiculos);
         btnHistorial = findViewById(R.id.btnHistorial);
         btnSolicitarServicio = findViewById(R.id.btnSolicitarServicio);
+        btnCerrarSesion = findViewById(R.id.btnCerrarSesion);
 
         btnMisVehiculos.setOnClickListener(v ->
                 Toast.makeText(this, "Vehículos (falta pantalla)", Toast.LENGTH_SHORT).show());
@@ -27,5 +28,10 @@ public class UsuarioActivity extends AppCompatActivity {
 
         btnSolicitarServicio.setOnClickListener(v ->
                 Toast.makeText(this, "Servicio (falta pantalla)", Toast.LENGTH_SHORT).show());
+
+        btnCerrarSesion.setOnClickListener(v -> {
+            Toast.makeText(this, "Sesión cerrada", Toast.LENGTH_SHORT).show();
+            finish(); // Esto termina la actividad y regresa a la anterior (login por ejemplo)
+        });
     }
 }

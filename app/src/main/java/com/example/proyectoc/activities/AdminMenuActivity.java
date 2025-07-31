@@ -8,7 +8,7 @@ import com.example.proyectoc.R;
 
 public class AdminMenuActivity extends AppCompatActivity {
 
-    Button btnCotizaciones, btnTecnicos, btnUsuarios;
+    Button btnCotizaciones, btnTecnicos, btnUsuarios, btnCerrarSesion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,7 @@ public class AdminMenuActivity extends AppCompatActivity {
         btnCotizaciones = findViewById(R.id.btnCotizaciones);
         btnTecnicos = findViewById(R.id.btnTecnicos);
         btnUsuarios = findViewById(R.id.btnUsuarios);
+        btnCerrarSesion = findViewById(R.id.btnCerrarSesion);
 
         btnCotizaciones.setOnClickListener(v ->
                 Toast.makeText(this, "Cotizaciones (falta pantalla)", Toast.LENGTH_SHORT).show());
@@ -27,5 +28,10 @@ public class AdminMenuActivity extends AppCompatActivity {
 
         btnUsuarios.setOnClickListener(v ->
                 Toast.makeText(this, "Usuarios (falta pantalla)", Toast.LENGTH_SHORT).show());
+
+        btnCerrarSesion.setOnClickListener(v -> {
+            Toast.makeText(this, "Sesión cerrada", Toast.LENGTH_SHORT).show();
+            finish(); // Termina esta actividad y regresa a la anterior (login por ejemplo)
+        });
     }
 }
